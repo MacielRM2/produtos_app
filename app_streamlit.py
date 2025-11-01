@@ -1,3 +1,4 @@
+#PRINT 1 
 import streamlit as st
 from modules.conectar_bd import conectar_bd
 from modules.validar_nome_produto import validar_nome_produto
@@ -48,6 +49,7 @@ elif menu == "Listar":
         for p in produtos:
          st.write(f"**ID:** {p[0]} | **Nome:** {p[1]} | **Preço:** R$ {p[2]:.2f} | **Estoque:** {p[3]}")
 
+#PRINT 2
 elif menu == "Atualizar":
     st.subheader("Atualizar produto")
     
